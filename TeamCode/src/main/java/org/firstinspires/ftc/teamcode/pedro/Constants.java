@@ -8,16 +8,18 @@ import com.qualcomm.robotcore.hardware.HardwareMap;
 public class Constants {
     public static Follower create(HardwareMap h) {
         // return new Follower(Drivetrain, Localizer, Foresight);
-        public static MecanumConfig drivetrainConfig = new MecanumConfig(c -> {
-            c.frontLeftName.set("LF");
-            c.frontRightName.set("RF");
-            c.backLeftName.set("LB");
-            c.backRightName.set("RB");
-            c.frontLeftDirection.set(DcMotorSimple.Direction.REVERSE);
-            c.frontRightDirection.set(DcMotorSimple.Direction.FORWARD);
-            c.backLeftDirection.set(DcMotorSimple.Direction.REVERSE);
-            c.backRightDirection.set(DcMotorSimple.Direction.FORWARD);
-        });
+
         return null;
     }
+    public static MecanumConfig drivetrainConfig = new MecanumConfig(
+            c -> {
+                c.frontLeftName.set("LF");
+                c.frontRightName.set("RF");
+                c.backLeftName.set("LB");
+                c.backRightName.set("RB");
+                c.frontLeftDirection.set(DcMotorSimple.Direction.REVERSE);
+                c.frontRightDirection.set(DcMotorSimple.Direction.FORWARD);
+                c.backLeftDirection.set(DcMotorSimple.Direction.REVERSE);
+                c.backRightDirection.set(DcMotorSimple.Direction.FORWARD);
+            });
 }
